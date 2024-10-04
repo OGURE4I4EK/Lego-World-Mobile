@@ -31,6 +31,6 @@ public class stairs : MonoBehaviour
     }
     void Act3()
     {
-        SceneManager.LoadScene("Act3");
+        SceneManager.LoadScene("HappyEnd");
     }
 }

@@ -7,6 +7,7 @@ public class forSister : MonoBehaviour
     [SerializeField] GameObject sister;
     [SerializeField] GameObject sister2;
     [SerializeField] GameObject stairs;
+    [SerializeField] GameObject stairs2;
     [SerializeField] AudioSource sistir;
     [SerializeField] AudioSource badman; int a = 0;
     public void otrezh()
@@ -28,5 +29,6 @@ public class forSister : MonoBehaviour
     public void net()
     {
         stairs.SetActive(true);
+        stairs2.SetActive(false);
     }
 }
