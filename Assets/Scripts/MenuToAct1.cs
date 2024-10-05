@@ -10,7 +10,11 @@ public class MenuToAct1 : MonoBehaviour
     {
         SceneManager.LoadScene("Act1");
     }
-    
+    public void toAct1B()
+    {
+        SceneManager.LoadScene("Act1Bad");
+    }
+
     public void exit()
     {
         Application.Quit();
