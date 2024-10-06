@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,18 @@ public class settingsMenu : MonoBehaviour
 {
     public TMP_Dropdown resolutionDropDown;
     Resolution[] resolutions;
+    [SerializeField] GameObject FPS;
+    public void setFPS(float fps)
+    {
+        if (fps >= 0.5)
+        {
+            FPS.SetActive(true);
+        }
+        else if (fps < 0.5)
+        {
+            FPS.SetActive(false);
+        }
+    }
     private void Start()
     {
         resolutions = Screen.resolutions;

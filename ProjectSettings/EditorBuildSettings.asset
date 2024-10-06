@@ -15,11 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/gameOverYpal.unity
     guid: 5a6e1b63e76a1d24b9345fb9feadf9ba
   - enabled: 1
-    path: Assets/Scenes/Act1.unity
+    path: Assets/Scenes/Act1h.unity
     guid: ea70934ef933d4a479af92e9465f0e4b
   - enabled: 1
     path: Assets/Scenes/Act2.unity
     guid: 41089de5c6bb18d4597a4db94a2e5219
+  - enabled: 1
+    path: Assets/Scenes/Act1.unity
+    guid: 57f364072c362da41a607188d180acf3
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 6296a13344bcee14898ac521884e5d3d, type: 2}
