@@ -1,19 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class voice : MonoBehaviour
 {
-    [SerializeField] AudioSource start;
-    [SerializeField] AudioSource end;
+    float range = 2f;
+    public Camera cam;
+    public RaycastHit hit;
+    [SerializeField] GameObject action;
 
-    private void Awake()
+    public void Update()
     {
-        start.Play();
-        Invoke(nameof(endi), 3f);
-    }
-    void endi()
-    {
-        end.Play();
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+            if (hit.transform.name == "dver4")
+            {
+                action.SetActive(true);
+            }
+            else if (hit.transform.name != "dver4")
+            {
+                action.SetActive(false);
+            }
+        }
     }
 }

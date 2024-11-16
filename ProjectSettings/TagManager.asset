@@ -9,6 +9,8 @@ TagManager:
   - TV off
   - TV on
   - weapon
+  - key
+  - scissors
   layers:
   - Default
   - TransparentFX

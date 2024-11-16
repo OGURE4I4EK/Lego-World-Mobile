@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Act1.unity
     guid: 57f364072c362da41a607188d180acf3
+  - enabled: 1
+    path: Assets/Scenes/Act2New.unity
+    guid: 40204aed7a09cc44e942950ac77f89a5
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 6296a13344bcee14898ac521884e5d3d, type: 2}

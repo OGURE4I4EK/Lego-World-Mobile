@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class key : MonoBehaviour
 {
-    [SerializeField] BoxCollider lack;
-    [SerializeField] BoxCollider lack2;
-    [SerializeField] GameObject door;
-    [SerializeField] GameObject door2;
     [SerializeField] GameObject scissors;
     [SerializeField] AudioSource scissorsNeed;
     [SerializeField] AudioSource scissorsFall;
@@ -20,20 +16,11 @@ public class key : MonoBehaviour
             if (b == 0)
             {
                 b++;
-                lack.enabled = false;
-                lack2.enabled = true;
-                Invoke(nameof(DoSomething), 1f);
-                door.SetActive(false); door2.SetActive(true);
                 scissorsNeed.Play();
                 Invoke(nameof(fallScis), 1f);
                 keyAction.SetActive(false);
                 keyInv.SetActive(false);
         }
-    }
-
-    private void DoSomething()
-    {
-        lack.enabled = true;
     }
     void fallScis()
     {
