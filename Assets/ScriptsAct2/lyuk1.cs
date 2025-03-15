@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class lyuk1 : MonoBehaviour
 {
@@ -9,14 +10,14 @@ public class lyuk1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<CharacterController>() != null)
+        if (other.gameObject.GetComponent<CharacterController>() != null || other.gameObject.GetComponent<NavMeshAgent>() != null)
         {
             luk.enabled = false;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<CharacterController>() != null)
+        if (other.gameObject.GetComponent<CharacterController>() != null || other.gameObject.GetComponent<NavMeshAgent>() != null)
         {
             luk.enabled = true;
         }

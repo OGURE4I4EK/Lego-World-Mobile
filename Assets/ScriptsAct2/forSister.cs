@@ -9,6 +9,8 @@ public class forSister : MonoBehaviour
     [SerializeField] GameObject stairs;
     [SerializeField] GameObject stairs2;
     [SerializeField] AudioSource sistir;
+    public GameObject worker;
+    public GameObject button;
     [SerializeField] AudioSource badman; int a = 0;
     public void otrezh()
     {
@@ -18,6 +20,8 @@ public class forSister : MonoBehaviour
                 sister2.SetActive(true);
                 sistir.Play();
                 sister.SetActive(false);
+                worker.SetActive(false);
+                button.SetActive(false);
                 Invoke(nameof(da), 4f);
             }
     }
