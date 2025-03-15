@@ -75,7 +75,7 @@ public class enemyAIPatrol : MonoBehaviour
         if (Physics.Raycast(Chelik.transform.position, Chelik.transform.forward, out hit, rangee))
         {
             if (hit.transform.name == "Player" || hit.transform.name == "Main Camrera" ||
-                hit.transform.name == "LeftHand Controller" || hit.transform.name == "RightHand Controller")
+                hit.transform.name == "Body" || hit.transform.name == "FirstPersonController")
             {
                 if (!isPlayerFind)
                 {
