@@ -30,6 +30,7 @@ public class enemyAIPatrol : MonoBehaviour
     private void Update()
     {
         Shoot();
+        Chelik.transform.LookAt(Player.transform.position);
     }
 
     IEnumerator ChangeAIPosition()
