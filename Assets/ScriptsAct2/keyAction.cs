@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class keyAction : MonoBehaviour
 {
-    [SerializeField] GameObject actionKeyBtn;
-    private void OnTriggerStay(Collider other)
+    float range = 2f;
+    public Camera cam;
+    public RaycastHit hit;
+    [SerializeField] GameObject actionBtn;
+
+    public void Update()
     {
-        if (other.gameObject.GetComponent<CharacterController>() != null)
-            actionKeyBtn.SetActive(true);
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.GetComponent<CharacterController>() != null)
-            actionKeyBtn.SetActive(false);
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+            if (hit.transform.name == "lock")
+            {
+                actionBtn.SetActive(true);
+            }
+            else if (hit.transform.name != "lock")
+            {
+                actionBtn.SetActive(false);
+            }
+        }
     }
 }

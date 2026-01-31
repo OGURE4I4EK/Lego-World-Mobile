@@ -22,13 +22,8 @@ public class forSister : MonoBehaviour
                 sister.SetActive(false);
                 worker.SetActive(false);
                 button.SetActive(false);
-                Invoke(nameof(da), 4f);
+                Invoke(nameof(net), 4f);
             }
-    }
-    void da()
-    {
-        badman.Play();
-        Invoke(nameof(net), 2f);
     }
     public void net()
     {

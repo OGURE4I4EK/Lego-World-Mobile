@@ -1,0 +1,1 @@
+D:\dOCUMENTS\Lego-World-Mobile\Library\PramData\AndroidApplicationController\Cache\com.Evervess.LegoWorld\gradle-project\unityLibrary\build\intermediates\cxx\Debug\724f5f1b\obj\armeabi-v7a

@@ -1,0 +1,1 @@
+D:\dOCUMENTS\Lego-World-Mobile\Library\PramData\AndroidApplicationController\Cache\com.Evervess.LegoWorld\gradle-project\unityLibrary\src\main\cpp\FramePacing\UnitySwappyWrapper.h

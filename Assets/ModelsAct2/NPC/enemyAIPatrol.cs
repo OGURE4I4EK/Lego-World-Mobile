@@ -111,7 +111,7 @@ public class enemyAIPatrol : MonoBehaviour
 
         Vector3 PlayerPoint = Player.transform.position;
         animator.SetTrigger("Run");
-        agent.speed = 70;
+        agent.speed = 7;
         agent.SetDestination(PlayerPoint);
     }
 
