@@ -16,7 +16,7 @@ public class stairs : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<CharacterController>() != null)
+        if (other.gameObject.CompareTag("Player"))
         {
             player.SetActive(false);
             sister.SetActive(false);

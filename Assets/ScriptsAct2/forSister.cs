@@ -11,6 +11,8 @@ public class forSister : MonoBehaviour
     [SerializeField] AudioSource sistir;
     public GameObject worker;
     public GameObject button;
+    public GameObject woodik1;
+    public GameObject woodik2;
     [SerializeField] AudioSource badman; int a = 0;
     public void otrezh()
     {
@@ -29,5 +31,6 @@ public class forSister : MonoBehaviour
     {
         stairs.SetActive(true);
         stairs2.SetActive(false);
+        woodik1.SetActive(true); woodik2.SetActive(true);
     }
 }
